@@ -1,0 +1,22 @@
+h1 {
+    color: none;
+    text-shadow: 5px 5px 8px rgb(10, 8, 8)
+    
+}
+
+a {
+    text-decoration: blue;
+    color: red;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+
+}
+
+li {
+     color: white;
+    text-align: left;
+
+}
