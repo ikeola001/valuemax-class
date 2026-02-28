@@ -1,7 +1,27 @@
 h1 {
+    font-size: 48px;
     color: none;
+    margin-top: 10px;
     text-shadow: 5px 5px 8px rgb(10, 8, 8)
-    
+       
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: oblique;
+    font-weight: 300;
+    font-size: 2em;
+    margin-left: 200px;
+    width: 1000px;
+    padding: 20px;
+    background: rgb(151, 151, 170);
+
+    /* background-color: blue;
+    background-image: url(images/uni.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px;
+    width: 700px */
 }
 
 a {
@@ -10,13 +30,30 @@ a {
 }
 
 a:hover {
-    color: green;
-    text-decoration: underline;
-
+    color: blue;
+    text-decoration: none;
 }
 
 li {
-     color: black;
+    color: black;
     text-align: left;
+    display: inline;
+    margin-top: -10px;
+    padding: 20px 30px;
+}
 
+ul {
+    list-style-type: none;
+    margin-left: 600px;
+    margin-top: -70px;
+    margin-bottom: 50px;
+    padding: 0px;
+    font-family: pristina;
+   
+}
+
+li a:link {
+    color: red;
+    text-decoration: none;
+    border-left: 2px solid red;
 }
