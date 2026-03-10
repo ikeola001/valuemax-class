@@ -1,0 +1,76 @@
+form{
+    width: 500;
+    padding: 500;
+    margin: auto;
+    font-size: 100px;
+}
+
+/* label {
+    border-radius: solid;
+} */
+
+h1 {
+    font-size: 48px;
+    color: none;
+    margin-top: 10px;
+    text-shadow: 10px 5px 20px rgb(10, 8, 8);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+   
+}
+
+li {
+    display: inline-block;
+    margin:20px 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    background: red;
+}
+
+li a:link{
+ 
+   
+    text-decoration: none;
+}
+
+li a:hover{
+    color: green;
+    /* background-color: purple; */
+}
+
+li a:active{
+    color: blue
+}
+
+li a:visited{
+    color: yellow
+}
+
+body {
+    text-align: center;
+    margin-top: 100px;
+    font-style:bold;
+    font-weight: bolder;
+   
+}
+
+input {
+    padding: 20px 300px;
+    width: 200px; 
+    /* border-style:solid;  */
+    border-radius: 30px;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: 750px;
+
+}
+

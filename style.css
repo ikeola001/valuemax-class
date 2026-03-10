@@ -1,10 +1,56 @@
-h1 {
-    font-size: 48px;
-    color: none;
-    margin-top: 10px;
-    text-shadow: 5px 5px 8px rgb(10, 8, 8)
-       
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    width: 100%;
+}
+
+.logo img{
+    width: 60px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav li{
+    margin-left: 20px;
+}
+
+
+/* h1 {
+    font-size: 48px;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 10px 5px 20px rgb(10, 8, 8);
+} */
+
+/* #headercontainer{
+  background: purple;
+  height: 90px;
+  position:static;
+} */
+
+/* .logolink{
+    margin-top: -10px;
+    border: 2px solid black;
+    border-radius: 50%;
+} */
+
+/* img {
+    margin-top: -10px;
+    border: 2px solid black;
+    border-radius: 50%;
+} */
 
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,36 +70,362 @@ p {
     width: 700px */
 }
 
-a {
+/* /* a {
     text-decoration: blue;
     color: red;
-}
+} */
 
-a:hover {
+/* a:hover {
     color: blue;
-    text-decoration: none;
-}
+    text-decoration: none; */
+/* } */
 
-li {
-    color: black;
+/* li { */
+    /* color: black;
     text-align: left;
     display: inline;
     margin-top: -10px;
-    padding: 20px 30px;
-}
+    padding: 20px 30px; */
+/* } */
 
-ul {
-    list-style-type: none;
+/* ul {
+    /* list-style-type: none;
     margin-left: 600px;
     margin-top: -70px;
     margin-bottom: 50px;
     padding: 0px;
-    font-family: pristina;
+    font-family: pristina; */
+    /* list-style-image: url(images/finger.jpg); */
+/* } 
+
+/* li a:link {
+    /* color: red;
+    text-decoration: none;
+    border-left: 2px solid red; */
+/* } */ 
+
+ul {
+    margin-left: 500px;
+    margin-top:-60px;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
    
 }
 
-li a:link {
-    color: red;
+/* li {
+    display: inline;
+    margin:20px 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    background: red;
+} */
+
+/* li a:link{
     text-decoration: none;
-    border-left: 2px solid red;
+} */
+
+/* li a:hover{
+    color: green; */
+    /* background-color: purple; */
+/* } */
+
+/* li a:active{
+    color: blue
+} */
+
+/* li a:visited{
+    color: yellow
+} */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* ===== FORM CONTAINER ===== */
+form {
+  background-color: #ffffff;
+  max-width: 860px;
+  margin: 0 auto 40px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== FORM SECTION TITLE ===== */
+form > label:first-child {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a3c6e;
+  margin-bottom: 24px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #1a3c6e;
+}
+
+/* ===== FIELDSET ===== */
+fieldset {
+  border: 1px solid #d0d7e3;
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  background-color: #fafbfd;
+}
+
+/* Nested fieldset */
+fieldset fieldset {
+  background-color: #f0f4fb;
+  border-color: #b0bdd4;
+  margin-top: 20px;
+}
+
+/* ===== LEGEND ===== */
+legend {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a3c6e;
+  background-color: #e8eef8;
+  padding: 5px 14px;
+  border-radius: 5px;
+  border: 1px solid #c0ccdf;
+}
+
+/* ===== FORM ROW (label + input together) ===== */
+fieldset > label,
+fieldset > input,
+fieldset > select,
+fieldset > textarea {
+  display: inline;
+}
+
+/* ===== ALL LABELS ===== */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* ===== TEXT, TEL, EMAIL, URL, DATE INPUTS ===== */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 13px;
+  border: 1.5px solid #c8d0de;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  margin-bottom: 3px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus {
+  border-color: #1a3c6e;
+  box-shadow: 0 0 0 3px rgba(26, 60, 110, 0.12);
+  outline: none;
+}
+
+/* ===== SELECT DROPDOWNS ===== */
+select {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1.5px solid #c8d0de;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231a3c6e' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  margin-bottom: 4px;
+}
+
+select:focus {
+  border-color: #1a3c6e;
+  box-shadow: 0 0 0 3px rgba(26, 60, 110, 0.12);
+  outline: none;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1.5px solid #c8d0de;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+textarea:focus {
+  border-color: #1a3c6e;
+  box-shadow: 0 0 0 3px rgba(26, 60, 110, 0.12);
+  outline: none;
+}
+
+/* ===== RADIO & CHECKBOX GROUP ===== */
+/* .radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+} */
+
+/* input[type="radio"],
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1a3c6e;
+  cursor: pointer;
+  margin-right: 6px;
+} */
+
+/* Style the inline radio labels */
+/* input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-weight: 400;
+  margin-top: 0;
+  display: inline;
+} */
+
+/* ===== FILE UPLOAD ===== */
+input[type="file"] {
+  display: block;
+  padding: 8px 0;
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 8px 16px;
+  background-color: #e8eef8;
+  color: #1a3c6e;
+  border: 1.5px solid #b0bdd4;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  margin-right: 12px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #d0daf0;
+}
+
+/* ===== CONSENT / LONG LABEL ===== */
+/* label[for="reference_verification"],
+fieldset > label:has(+ input[name="reference_verification"]) {
+  font-weight: 500;
+  color: #555;
+  font-style: italic;
+  line-height: 1.7;
+} */
+
+/* ===== HINT TEXT ===== */
+/* fieldset > label:last-of-type {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+  margin-top: 6px;
+} */
+
+/* ===== SUBMIT & RESET BUTTONS ===== */
+input[type="submit"],
+button[type="submit"] {
+  background-color: #1a3c6e;
+  color: #fff;
+  padding: 11px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.25s, transform 0.1s;
+  margin-top: 20px;
+  margin-right: 12px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #12295a;
+  transform: translateY(-1px);
+}
+
+input[type="submit"]:last-of-type,
+button[type="reset"] {
+  background-color: transparent;
+  color: #1a3c6e;
+  border: 1.5px solid #1a3c6e;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+  margin-top: 20px;
+}
+
+input[type="submit"]:last-of-type:hover,
+button[type="reset"]:hover {
+  background-color: #e8eef8;
+}
+
+/* ===== PRESENT JOB CHECKBOX INLINE ===== */
+input[name="present_job"] {
+  width: auto;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+/* @media (max-width: 600px) {
+  form {
+    padding: 24px 16px;
+  }
+
+  fieldset {
+    padding: 20px 16px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="url"],
+  input[type="date"],
+  select,
+  textarea {
+    font-size: 15px;
+  }
+} */

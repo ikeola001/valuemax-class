@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCMB Online</title>
+    <style>
+        /* ══ RESET ══ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* ══ BODY ══ */
+body {
+    background: #fff;
+    color: #333;
+}
+
+
+/* ════════════════════════
+   NAVBAR
+════════════════════════ */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 18px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+.navbar-links a.active {
+    color: #800080;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    color: #800080;
+}
+
+
+/* ════════════════════════
+   PURPLE BANNER
+════════════════════════ */
+.purple-banner {
+    background: #6a0080;
+    color: #fff;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 340px;
+}
+
+.purple-banner span {
+    font-size: 13px;
+    color: #fff;
+}
+
+.banner-icon {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ════════════════════════
+   WELCOME SECTION
+════════════════════════ */
+.welcome-section {
+    padding: 16px 20px 6px 20px;
+}
+
+.welcome-border {
+    border-left: 4px solid #f5a800;
+    padding-left: 10px;
+}
+
+.welcome-border p {
+    font-size: 13px;
+    color: #333;
+}
+
+.welcome-border h1 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* ════════════════════════
+   SECURITY WARNING
+════════════════════════ */
+.security-warning {
+    padding: 6px 20px 10px 20px;
+}
+
+.security-warning p {
+    font-size: 12px;
+    color: #333;
+}
+
+.session-warning {
+    color: #cc0000 !important;
+    font-size: 12px;
+}
+
+
+/* ════════════════════════
+   MAIN CONTENT
+════════════════════════ */
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px 20px 20px;
+    gap: 0;
+}
+
+
+/* ════════════════════════
+   LOGIN SECTION
+════════════════════════ */
+.login-section {
+    width: 300px;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form {
+    padding: 14px 14px 10px 14px;
+    background: #fff;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    width: 220px;
+    height: 22px;
+    border: 1px solid #999;
+    padding: 2px 6px;
+    font-size: 12px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #6a0080;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.form-check input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.form-check label {
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-login {
+    background: linear-gradient(180deg, #f5a800 0%, #e09000 100%);
+    color: #fff;
+    border: 1px solid #cc8800;
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-login:hover {
+    background: linear-gradient(180deg, #e09000 0%, #cc7800 100%);
+}
+
+.register-link {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    color: #6a0080;
+}
+
+/* Purple block at bottom of login */
+.login-purple-block {
+    background: #6a0080;
+    height: 90px;
+    width: 100%;
+}
+
+
+/* ════════════════════════
+   MIDDLE BANNER
+════════════════════════ */
+.middle-banner {
+    width: 260px;
+    min-width: 260px;
+}
+
+.middle-banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ════════════════════════
+   RIGHT SECTION
+════════════════════════ */
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.trouble-box {
+    padding: 12px 16px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.trouble-title {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.trouble-box p {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.security-box {
+    padding: 12px 16px;
+    background: #f5f5f5;
+}
+
+.security-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.security-header p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.padlock-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.security-text {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.btn-findout {
+    background: linear-gradient(180deg, #f5a800 0%, #e09000 100%);
+    color: #fff;
+    border: 1px solid #cc8800;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    float: right;
+}
+
+.btn-findout:hover {
+    background: linear-gradient(180deg, #e09000 0%, #cc7800 100%);
+}
+
+
+/* ════════════════════════
+   BOTTOM INFO STRIP
+════════════════════════ */
+.info-strip {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px;
+    margin-top: 16px;
+    gap: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.yellow-box {
+    background: #f5a800;
+    width: 120px;
+    min-width: 120px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+}
+
+.yellow-box p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.info-col {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px 20px;
+    border-left: 1px solid #ddd;
+    min-height: 90px;
+}
+
+.info-icon {
+    width: 36px;
+    height: 36px;
+    margin-top: 2px;
+}
+
+.info-col ul {
+    list-style: disc;
+    padding-left: 14px;
+}
+
+.info-col ul li {
+    margin-bottom: 4px;
+}
+
+.info-col ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.info-col ul li a:hover {
+    color: #6a0080;
+    text-decoration: underline;
+}
+
+
+/* ════════════════════════
+   SOCIAL STRIP
+════════════════════════ */
+.social-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.social-strip span {
+    font-size: 13px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.social-icons img:hover {
+    opacity: 0.75;
+}
+
+
+/* ════════════════════════
+   FOOTER
+════════════════════════ */
+.footer {
+    background: #555;
+    padding: 14px 30px;
+    text-align: center;
+}
+
+.footer p {
+    color: #ddd;
+    font-size: 11px;
+    line-height: 1.6;
+}
+    </style>
+
+</head>
+<body>
+
+    <!-- ══ TOP NAVBAR ══ -->
+    <div class="navbar">
+
+        <div class="navbar-logo">
+            <!-- PUT YOUR FCMB LOGO IMAGE HERE -->
+            <img src="fcmb-logo.png" alt="FCMB Logo">
+        </div>
+
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="active">Product</a>
+            <a href="#">Service</a>
+            <a href="#">Service</a>
+            <a href="#">Google</a>
+        </div>
+
+    </div>
+    <!-- ══ END NAVBAR ══ -->
+
+
+    <!-- ══ PURPLE BANNER ══ -->
+    <div class="purple-banner">
+        <!-- PUT LOCK/KEY ICON HERE -->
+        <img src="lock-icon.png" alt="lock icon" class="banner-icon">
+        <span>Online Business Banking</span>
+    </div>
+    <!-- ══ END PURPLE BANNER ══ -->
+
+
+    <!-- ══ WELCOME TEXT ══ -->
+    <div class="welcome-section">
+        <div class="welcome-text">
+            <div class="welcome-border">
+                <p>Welcome To</p>
+                <h1>FCMB Online</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ══ END WELCOME TEXT ══ -->
+
+
+    <!-- ══ SECURITY WARNING ══ -->
+    <div class="security-warning">
+        <p>Your User ID and Password are confidential NEVER disclose them to anyone.</p>
+        <p class="session-warning">Your Session Timed Out ! Kindly Login Again To use the Application</p>
+    </div>
+    <!-- ══ END SECURITY WARNING ══ -->
+
+
+    <!-- ══ MAIN CONTENT ══ -->
+    <div class="main-content">
+
+        <!-- LEFT: LOGIN FORM -->
+        <div class="login-section">
+
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="username">Login Name</label>
+                    <input type="text" id="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn-login">Login</button>
+                    <a href="#" class="register-link">Click Here to Register...</a>
+                </div>
+            </div>
+
+            <!-- PURPLE BOTTOM BLOCK -->
+            <div class="login-purple-block"></div>
+
+        </div>
+        <!-- END LOGIN FORM -->
+
+
+        <!-- MIDDLE: BIG BANNER IMAGE -->
+        <div class="middle-banner">
+            <!-- PUT YOUR BIG FCMB APP IMAGE HERE -->
+            <img src="images/FCMB_business.png" alt="FCMB Business App Banner">
+        </div>
+        <!-- END MIDDLE BANNER -->
+
+
+        <!-- RIGHT: TROUBLE SIGNING IN -->
+        <div class="right-section">
+
+            <div class="trouble-box">
+                <p class="trouble-title">Having Trouble Signing in?</p>
+                <p>Call us or send us an email</p>
+                <p><span class="label">Email:</span> customerservice@fcmb.com</p>
+                <p><span class="label">Telephone:</span> 07003290000 or 01-2796800</p>
+            </div>
+
+            <div class="security-box">
+                <div class="security-header">
+                    <p>How to secure your account</p>
+                    <!-- PUT PADLOCK ICON HERE -->
+                    <img src="padlock-icon.png" alt="padlock" class="padlock-icon">
+                </div>
+                <p class="security-text">
+                    FCMB will never solicit your personal or security information by
+                    email or by phone. Please refer to our security page.
+                </p>
+                <button class="btn-findout">FIND OUT MORE</button>
+            </div>
+
+        </div>
+        <!-- END RIGHT SECTION -->
+
+    </div>
+    <!-- ══ END MAIN CONTENT ══ -->
+
+
+    <!-- ══ BOTTOM INFO STRIP ══ -->
+    <div class="info-strip">
+
+        <!-- YELLOW BOX -->
+        <div class="yellow-box">
+            <p>Putting your banking needs first</p>
+        </div>
+
+        <!-- BRANCH INFO -->
+        <div class="info-col">
+            <!-- PUT HOUSE ICON HERE -->
+            <img src="house-icon.png" alt="branch icon" class="info-icon">
+            <ul>
+                <li><a href="#">Where to find a branch</a></li>
+                <li><a href="#">Where to find ATM</a></li>
+            </ul>
+        </div>
+
+        <!-- ONLINE SERVICES -->
+        <div class="info-col">
+            <!-- PUT PEN ICON HERE -->
+            <img src="pen-icon.png" alt="services icon" class="info-icon">
+            <ul>
+                <li><a href="#">Open an account online</a></li>
+                <li><a href="#">Make payment online</a></li>
+                <li><a href="#">E-statements</a></li>
+                <li><a href="#">How to use the internet banking</a></li>
+            </ul>
+        </div>
+
+        <!-- TELEPHONE BANKING -->
+        <div class="info-col">
+            <!-- PUT PHONE ICON HERE -->
+            <img src="phone-icon.png" alt="phone icon" class="info-icon">
+            <ul>
+                <li><a href="#">Telephone Banking</a></li>
+                <li><a href="#">Send us feedback by mail</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- ══ END BOTTOM INFO STRIP ══ -->
+
+
+    <!-- ══ SOCIAL MEDIA STRIP ══ -->
+    <div class="social-strip">
+        <span>Connect with us:</span>
+        <div class="social-icons">
+            <!-- PUT SOCIAL MEDIA ICONS HERE IN ORDER -->
+            <img src="icon-fcmb.png"     alt="FCMB">
+            <img src="icon-facebook.png" alt="Facebook">
+            <img src="icon-twitter.png"  alt="Twitter">
+            <img src="icon-linkedin.png" alt="LinkedIn">
+            <img src="icon-youtube.png"  alt="YouTube">
+            <img src="icon-google.png"   alt="Google+">
+        </div>
+    </div>
+    <!-- ══ END SOCIAL STRIP ══ -->
+
+
+    <!-- ══ FOOTER ══ -->
+    <div class="footer">
+        <p>
+            This site ensures that all information send to us via the World Wide Web are encrypted.
+            You can confirm the information provided by our certificate issuer by clicking on the
+            padlock icon on your address bar. 2019 © First city Monument Bank Plc. A Member of First City Groups
+        </p>
+    </div>
+    <!-- ══ END FOOTER ══ -->
+
+</body>
+</html>
