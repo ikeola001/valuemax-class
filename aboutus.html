@@ -4,6 +4,293 @@
         <link rel="icon" type="image/jpg" sizes="32x32" href="images/logo.png" />
         <title>About Us</title>
         <link rel="stylesheet" type="text/css" href="st.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <style>
+            .focus_section{
+                background-image: url("images/backg.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                /* padding: 120px 0 220px 0; */
+                
+            }
+
+            .overlay{
+                background: rgba(50, 0, 90, 0.75);
+                padding: 80px;
+                text-align: center;
+                color: white;
+                /* width: 100%;
+                height: 100%; */
+                /* position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; */
+            }
+
+            .mini_title{
+                color: #ffc107;
+                font-weight: bold;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+
+            .focus_title{
+                font-size: 55px;
+                font-weight: bolder;
+                margin: 10px 0;
+                margin-bottom: 20px;
+            }
+
+            .focus_text{
+                max-width: 650px;
+                margin: auto;
+                margin-top: 20px;
+                line-height: 1.4;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 30px;
+                max-width: 1100px;
+                margin: auto;
+                margin-top: 60px;
+                /* transform: translateY(60px); */
+            }
+
+            .card_purple{
+                padding: 35px;
+                border-radius: 12px;
+                text-align: left;
+                color: white;
+                background: linear-gradient(135deg,#8e2de2,#4a00e0);
+            }
+
+            .card_purple p{
+                font-size: 13px;
+                color: white;
+                font-weight: bold;
+                line-height: 1.7;
+                margin-bottom: 15px;
+            }
+
+            .card_purple:hover{
+                transform: scale(1.04);
+            }
+
+            .card_purple i{
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .card_purple h3{
+                margin-bottom: 10px;
+            }
+
+            .card_purple a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .card_blue{
+                padding: 35px;
+                border-radius: 12px;
+                text-align: left;
+                color: white;
+                background: linear-gradient(135deg,#2193b0,#6dd5ed);
+            }
+
+             .card_blue:hover{
+                transform: scale(1.04);
+            }
+
+            .card_blue p{
+                font-size: 13px;
+                color: white;
+                font-weight: bold;
+                line-height: 1.7;
+                margin-bottom: 15px;
+            }
+
+            .card_blue i{
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .card_blue h3{
+                margin-bottom: 10px;
+            }
+
+            .card_blue a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .card_red{
+                padding: 35px;
+                border-radius: 12px;
+                text-align: left;
+                color: white;
+                background: linear-gradient(135deg,#ff416c,#ff4b2b);
+            }
+
+            .card_red:hover{
+                transform: scale(1.04);
+            }
+
+
+            .card_red p{
+                font-size: 13px;
+                color: white;
+                font-weight: bold;
+                line-height: 1.7;
+                margin-bottom: 15px;
+            }
+
+            .card_red i{
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .card_red h3{
+                margin-bottom: 10px;
+            }
+
+            .card_red a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .card_green{
+                padding: 35px;
+                border-radius: 12px;
+                text-align: left;
+                color: white;
+                background: linear-gradient(135deg,#11998e,#38ef7d);
+            }
+
+            .card_green:hover{
+                transform: scale(1.04);
+            }
+
+
+            .card_green p{
+                font-size: 13px;
+                color: white;
+                font-weight: bold;
+                line-height: 1.7;
+                margin-bottom: 15px;
+            }
+
+            .card_green i{
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .card_green h3{
+                margin-bottom: 10px;
+            }
+
+            .card_green a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .card_teal{
+                padding: 35px;
+                border-radius: 12px;
+                text-align: left;
+                color: white;
+                background: linear-gradient(135deg,#55e4a1,#1c664a);
+            }
+
+            .card_teal:hover{
+                transform: scale(1.04);
+            }
+
+
+            .card_teal i{
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .card_teal p{
+                font-size: 13px;
+                color: white;
+                line-height: 1.7;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .card_teal h3{
+                margin-bottom: 10px;
+            }
+
+            .card_teal a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .card_orange{
+                padding: 35px;
+                border-radius: 12px;
+                text-align: left;
+                color: white;
+                background: linear-gradient(135deg,#f7971e,#ffd200);
+            }
+
+            .card_orange:hover{
+                transform: scale(1.04);
+            }
+
+            .card_orange p{
+                font-size: 13px;
+                line-height: 1.7;
+                color: white;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .card_orange i{
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .card_orange h3{
+                margin-bottom: 10px;
+            }
+
+            .card_orange a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .explore_btn{
+                margin-top: 60px;
+                padding: 15px 35px;
+                background: #ffc107;
+                border: none;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .explore_btn:hover .arrow{
+                transform: translateX(10px)
+            }
+
+            .arrow{
+                display: inline-block;
+                transition: 0.3s;
+            }
+
+        </style>
 </head>
     <body>
 
@@ -25,56 +312,77 @@
 
         </div>
 
-        <img src="images/about.jpg" width="100%" height="400" alt="about us">
+       <section class="focus_section">
 
-        <!--Types of links-->
+            <div class="overlay">
 
-        <!--Ordered List-->
-        <ol>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Products</li>
-            <li>Contact Us</li>
-        </ol>
+                <p class="mini_title">WHAT WE DO</p>
 
-         <!--Unordered List-->
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Products</li>
-            <li>Contact Us</li>
-        </ul>
+                <h1 class="focus_title">Our Focus Areas</h1>
 
-        <!--Descriptive List-->
-        <dl>
-            <dt>Fruits</dt>
-            <dd>Cashew</dd>
-            <dd>Peneapple</dd>
-            <dd>Grover</dd>
-            <dd>Mango</dd>
+                <p class="focus_text">
+                    Six integrated focus areas guide our work in youth-led peacebuilding,
+                    conflict prevention, and sustainable development.
+                </p>
 
-            <dt>Meat</dt>
-            <dd>Beef</dd>
-            <dd>Chicken</dd>
-            <dd>Turkey</dd>
-            <dd>Egg</dd>
-        </dl>
+                <div class="cards">
 
-        <!--Nested List-->
-        <ol>
-            <li>Home</li>
-            <li>About Us</li>
-                <ul>
-                    <li>Our Team</li>
-                    <li>Our History</li>
-                    <li>Our Mission</li>
-                </ul>
-                
-            <li>Services</li>
-            <li>Products</li>
-            <li>Contact Us</li>
-        </ol>
+                    <div class="card_purple">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Youth & Women Peace and Security</h3>
+                        <p>Empowering young people and women as active agents of peace
+                            through capacity buildding and advocacy.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="card_blue">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Conflict Management & Peacebuilding</h3>
+                        <p>Building skills to identify and handle conflicts sensibly, fairly and efficiently.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="card_red">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <h3>Prevention of Violent Extremism</h3>
+                        <p>Proactive measures to combat extremism through
+                            education and community engagement.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="card_green">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <h3>Governance & Accountability</h3>
+                        <p>Promoting inclusive, transparent and accountable governance
+                            through civic awareness.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="card_teal">
+                        <i class="fa-solid fa-leaf"></i>
+                        <h3>Climate & Environmental Security</h3>
+                        <p>Integrating climate action with peacebuilding to
+                            address resource conflicts.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="card_orange">
+                        <i class="fa-solid fa-book"></i>
+                        <h3>Peace Education</h3>
+                        <p>Equipping communities with knowledge and skills for
+                            peaceful conflict resolution.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+
+                <button class="explore_btn">
+                    Explore All Programmes <span class="arrow">&rarr;</span></button>
+
+            </div>
+
+       </section>
+
     </body>
 </html>

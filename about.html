@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            left:150px;
+
+            /* padding: 15px;
+            border: solid 1px black; */
+            
+            /* display: inline-block; */
+        }
+
+        .dropdown p{
+            display: inline-block;
+            border: 1px solid black;
+            padding: 20px;
+            color: white;
+            background: blue;
+        }
+
+        .dropdown_content{
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown a{
+            display: inline-block;
+            text-decoration: none;
+        }
+
+       .dropdown:hover .dropdown_content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+                <p>About us</p>
+
+                <div class="dropdown_content">
+                    <a href="#">Our Service</a>
+                    <a href="#">Our Agents</a>
+                    <a href="#">Our Contacts</a>
+                </div>
+            </div>
+
+</body>
+</html>
